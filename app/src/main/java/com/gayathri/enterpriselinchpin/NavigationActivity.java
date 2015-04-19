@@ -94,8 +94,6 @@ public class NavigationActivity extends ActionBarActivity
         } else if (position == 4) {
             new Profile.CallCompensationAPI(this).execute(compensationUrl);
         } else if (position == 5) {
-            new Profile.CallPerformanceAPI(this).execute(performanceUrl);
-        } else if (position == 6) {
             new Profile.CallDirectoryAPI(this).execute(directoryUrl);
         } else {
             currentFragment = PlaceholderFragment.newInstance(position + 1);

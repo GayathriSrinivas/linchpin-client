@@ -141,7 +141,7 @@ public class C {
 
     public static byte[] getPng(Bitmap bitmap) {
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
-        bitmap.compress(Bitmap.CompressFormat.PNG, 90, outputStream);
+        bitmap.compress(Bitmap.CompressFormat.PNG, 50, outputStream);
         return outputStream.toByteArray();
     }
 

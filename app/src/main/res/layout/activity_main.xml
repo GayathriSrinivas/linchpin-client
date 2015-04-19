@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.gayathri.enterpriselinchpin.MainActivity"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackground">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,7 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/username"
-            android:text="gayathri@sjsu.edu"/>
+            android:text="\@sjsu.edu"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -44,8 +45,7 @@
             android:layout_height="wrap_content"
             android:inputType="textPassword"
             android:ems="10"
-            android:id="@+id/password"
-            android:text="gayathri" />
+            android:id="@+id/password" />
 
         <LinearLayout
             android:orientation="vertical"
@@ -85,8 +85,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
                 android:ems="10"
-                android:id="@+id/password2"
-                android:text="gayathri" />
+                android:id="@+id/password2"  />
 
             <TextView
                 android:layout_width="match_parent"
