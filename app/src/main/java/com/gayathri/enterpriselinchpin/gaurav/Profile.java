@@ -152,7 +152,7 @@ public class Profile extends ActionBarActivity implements GestureDetector.OnGest
     protected void makeCall(){
         Log.i("Make call", "");
         Intent phoneIntent = new Intent(Intent.ACTION_CALL);
-        phoneIntent.setData(Uri.parse("tel:6309230545"));
+        phoneIntent.setData(Uri.parse("tel:6508617024"));
 
         try {
             startActivity(phoneIntent);
@@ -584,7 +584,7 @@ public class Profile extends ActionBarActivity implements GestureDetector.OnGest
 
     public void showDirectory(View v){
         System.out.println("Directory Activity Invoked");
-        //new CallDirectoryAPI().execute(directoryUrl);
+        new CallDirectoryAPI(this).execute(directoryUrl);
     }
 
     public void openLinkedInProfile(View v){
@@ -595,6 +595,7 @@ public class Profile extends ActionBarActivity implements GestureDetector.OnGest
     }
 
     public void openFacebookProfile(View v){
+        Log.d("Facebook Uri", fbUri);
         Log.d("Facebook Uri", fbUri);
         Uri uri = Uri.parse(fbUri);
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);

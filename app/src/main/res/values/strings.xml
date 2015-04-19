@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">EnterpriseLinchpin2</string>
+    <string name="app_name">Enterprise Linchpin</string>
     <string name="title_section1">Messaging</string>
     <string name="title_section2">Profile</string>
     <string name="title_section3">Team Info</string>
